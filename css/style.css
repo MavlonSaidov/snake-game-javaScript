@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  text-align: center;
+  font-family: arial, sans-serif;
+  color: #00ccff;
+}
+
+.grid {
+  width: 452px;
+  height: 452px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #3a3b3c;
+  border: 1px solid #3a3b3c;
+  margin: 20px 0;
+}
+
+.grid div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #3a3b3c;
+}
+
+.score {
+  text-align: left;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.start-btn {
+  background-color: #252b30;
+  outline: none;
+  border: 1px solid #8695a2;
+  color: #4fd6c1;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  -webkit-box-shadow: 2px 4px 8px 0px #252b30;
+          box-shadow: 2px 4px 8px 0px #252b30;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.start-btn:active {
+  background: #4fd6c1;
+  color: #252b30;
+}
+
+.control-btns {
+  display: none;
+  left: -100%;
+  margin: 15px 0;
+}
+
+.control-btns button {
+  background-color: #252b30;
+  outline: none;
+  border: 1px solid #8695a2;
+  color: #4fd6c1;
+  padding: 12px 17px;
+  border-radius: 10px;
+  font-size: 20px;
+  -webkit-box-shadow: 2px 4px 8px 0px #252b30;
+          box-shadow: 2px 4px 8px 0px #252b30;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.control-btns button:active {
+  background: #4fd6c1;
+  color: #252b30;
+}
+
+.control-btns .left-btn {
+  margin-right: 55px;
+}
+
+.control-btns div {
+  margin: 5px;
+}
+
+.snake {
+  background: white;
+  border-radius: 2px;
+}
+
+.apple {
+  background-color: #ff0062;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .control-btns {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    width: 377px;
+    height: 377px;
+  }
+  .grid div {
+    width: 25px;
+    height: 25px;
+  }
+  .start-btn {
+    padding: 10px 18px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    width: 302px;
+    height: 302px;
+  }
+  .grid div {
+    width: 20px;
+    height: 20px;
+  }
+  .start-btn {
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid {
+    width: 257px;
+    height: 257px;
+  }
+  .grid div {
+    width: 17px;
+    height: 17px;
+  }
+  .start-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+	font-family: arial, sans-serif;
+	color: rgb(0, 204, 255);
+}
+.grid {
+	width: 452px;
+	height: 452px;
+	display: flex;
+	flex-wrap: wrap;
+	background: #3a3b3c;
+	border: 1px solid #3a3b3c;
+	margin: 20px 0;
+	div {
+		width: 30px;
+		height: 30px;
+		border: 1px solid #3a3b3c;
+
+	}
+}
+.score {
+	text-align: left;
+	font-size: 20px;
+	text-transform: uppercase;
+	
+}
+.start-btn {
+	background-color: #252b30;
+	outline: none;
+	border: 1px solid #8695a2;
+	color: #4fd6c1;
+	padding: 12px 20px;
+	border-radius: 10px;
+	font-size: 20px;
+	box-shadow: 2px 4px 8px 0px #252b30;
+	// background-color: #191e21
+	transition: all .3s ease;
+	margin-bottom: 30px;
+	cursor: pointer;
+	&:active {
+		background: #4fd6c1;
+		color: #252b30;
+	}
+}
+
+.control-btns {
+	display: none;
+	left: -100%;
+	margin: 15px 0;
+	button {
+		background-color: #252b30;
+		outline: none;
+		border: 1px solid #8695a2;
+		color: #4fd6c1;
+		padding: 12px 17px;
+		border-radius: 10px;
+		font-size: 20px;
+		box-shadow: 2px 4px 8px 0px #252b30;
+		// background-color: #191e21
+		transition: all .3s ease;
+		cursor: pointer;
+	}
+	button:active {
+		background: #4fd6c1;
+		color: #252b30;
+	}
+	.left-btn {
+		margin-right: 55px;
+	}
+	div {
+		margin: 5px;
+	}
+}
+
+.snake {
+	background: white;
+	border-radius: 2px;
+}
+
+.apple {
+	background-color: rgb(255, 0, 98);
+	border-radius: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+	.control-btns {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.grid {
+		width: 377px;
+		height: 377px;
+		div {
+			width: 25px;
+			height: 25px;
+		}
+	}
+	.start-btn {
+		padding: 10px 18px;
+		font-size: 18px;
+	}
+	
+}
+@media screen and (max-width: 500px) {
+	.grid {
+		width: 302px;
+		height: 302px;
+		div {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	.start-btn {
+		padding: 9px 12px;
+		font-size: 14px;
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+	.grid {
+		width: 257px;
+		height: 257px;
+		div {
+			width: 17px;
+			height: 17px;
+		}
+	}
+	.start-btn {
+		padding: 7px 10px;
+		font-size: 12px;
+	}
+	
+}
